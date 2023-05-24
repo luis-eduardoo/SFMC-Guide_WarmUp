@@ -7,7 +7,9 @@ STEP 2
     NOTE:
     - Query to separate domains into Data Extensions
 */
+
 --------------> GMAIL 
+
 SELECT 
     [COLUMN_SUBSCRIBERKEY],
     [COLUMN_EMAIL]
@@ -17,7 +19,6 @@ WHERE
     (
     SUBSTRING([COLUMN_EMAIL], CHARINDEX('@',[COLUMN_EMAIL]) + 1, LEN([COLUMN_EMAIL])) LIKE '%gmail.com%' 
     OR SUBSTRING([COLUMN_EMAIL], CHARINDEX('@',[COLUMN_EMAIL]) + 1, LEN([COLUMN_EMAIL]))  LIKE '%googlemail%') --> Data extension Destination [Your_Data_Extension_GMAIL] - Overwrite
-
 
  --------------> HOTMAIL
 
@@ -56,6 +57,7 @@ WHERE
     OR SUBSTRING([COLUMN_EMAIL], CHARINDEX('@',[COLUMN_EMAIL]) + 1, LEN([COLUMN_EMAIL]))  LIKE '%talk21%') --> Data extension Destination [Your_Data_Extension_YAHOO] - Overwrite
 
  --------------> OTHERS
+ 
 SELECT 
     DE.[COLUMN_SUBSCRIBERKEY],
     DE.[COLUMN_EMAIL]
