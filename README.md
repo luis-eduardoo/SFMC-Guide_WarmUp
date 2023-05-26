@@ -4,7 +4,7 @@ Vai começar WarmUp na sua conta? Acho que posso te ajudar...
 
 Neste repositório você vai encontrar os códigos para automatizar o seu WarmUp de forma rápida e eficiente. 
 
-Caso tenha qualquer tipo de dúvidas ou sugestões, fico disponível pelo meu LinkedIn. 😁 🤙
+Caso tenha qualquer tipo de dúvida ou sugestão, estou disponível pelo meu LinkedIn. 😁 🤙
 
 
 
