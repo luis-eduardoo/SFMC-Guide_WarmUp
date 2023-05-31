@@ -63,6 +63,7 @@ SELECT
     DE.[COLUMN_EMAIL]
 FROM 
     [Your_Data_Extension] DE
+WHERE
     NOT EXISTS
         (SELECT '' FROM [Your_Data_Extension_GMAIL] G WHERE G.[COLUMN_PRIMARYKEY] = DE.[COLUMN_PRIMARYKEY]) 
     NOT EXISTS
