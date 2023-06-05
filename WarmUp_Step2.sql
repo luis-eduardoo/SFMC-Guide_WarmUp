@@ -66,7 +66,7 @@ FROM
 WHERE
     NOT EXISTS
         (SELECT '' FROM [Your_Data_Extension_GMAIL] G WHERE G.[COLUMN_PRIMARYKEY] = DE.[COLUMN_PRIMARYKEY]) 
-   OR NOT EXISTS
+   AND NOT EXISTS
         (SELECT '' FROM [Your_Data_Extension_HOTMAIL] H WHERE H.[COLUMN_PRIMARYKEY] = DE.[COLUMN_PRIMARYKEY])
-   OR NOT EXISTS
+   AND NOT EXISTS
         (SELECT '' FROM [Your_Data_Extension_YAHOO] Y WHERE Y.[COLUMN_PRIMARYKEY] = DE.[COLUMN_PRIMARYKEY]) --> Data extension Destination [Your_Data_Extension_OTHERS] - Overwrite
